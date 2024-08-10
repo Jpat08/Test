@@ -1,0 +1,15 @@
+document.getElementById('order-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Collect form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const occasion = document.getElementById('occasion').value;
+    const details = document.getElementById('details').value;
+
+    // Display a simple confirmation (in a real site, this would send data to a server)
+    alert(`Thank you, ${name}! Your custom song order for ${occasion} has been received.`);
+
+    // Reset the form
+    event.target.reset();
+});
